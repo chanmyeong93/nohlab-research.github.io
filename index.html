@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>노윤하 교수 연구실 | 사회약학 & 약물역학 연구실</title>
+  <meta name="description" content="전남대학교 약학대학 노윤하 교수 연구실(사회약학 & 약물역학 연구실) 공식 홈페이지입니다. 보건의료 빅데이터 분석, Real-World Evidence(RWE), 약물 안전성 및 보건의료 정책 연구를 수행합니다.">
+  <meta name="keywords" content="노윤하, 노윤하 교수, 전남대학교 약학대학, 사회약학, 약물역학, 사회약학 연구실, 약물역학 연구실, 약대 연구실, 약학 연구실, RWD, RWE, 보건의료 빅데이터">
+  <meta name="google-site-verification" content="fO2iC1Ak4Dqqgbn_Cw4BAH_fTTFtaWDQc3sM4y-HSIg" />
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index">
+        <!-- 로고 교체: images/logo.png 파일만 바꿔 넣으면 모든 페이지에 반영됩니다 -->
+        <img class="brand-logo" src="images/logo.png" alt="Noh Lab logo">
+        <span class="brand-text">
+          <span class="brand-name" data-i18n="brand_name">노윤하 교수 Lab</span>
+          <span class="brand-affil" data-i18n="brand_affil">전남대학교 약학대학</span>
+        </span>
+      </a>
+      <div class="header-right">
+        <nav class="site-nav">
+        <a href="index" class="active" data-i18n="nav_home">Home</a>
+        <a href="research" data-i18n="nav_research">Research</a>
+        <a href="publications" data-i18n="nav_publications">Publications</a>
+        <a href="members" data-i18n="nav_members">Members</a>
+        <a href="news" data-i18n="nav_news">News</a>
+        </nav>
+        <button id="lang-toggle-btn" class="lang-btn">EN</button>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero-bg">
+      <div class="container hero-inner">
+        <span class="tagline" data-i18n="hero_tagline">HEALTHCARE BIG DATA & REAL-WORLD EVIDENCE</span>
+        <h1 data-i18n="hero_title">사회약학 & 약물역학 연구실</h1>
+        <p class="subtitle" data-i18n="hero_sub">Real-World Data 기반 임상적 근거 창출 및 보건의료 정책 연구</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="research" data-i18n="hero_btn1">연구 분야</a>
+          <a class="btn btn-secondary" href="publications" data-i18n="hero_btn2">연구 성과</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. 최신 논문 + 최신 소식 (publications-data.js / News 에서 자동 반영) -->
+    <section class="container section latest-section">
+      <div class="latest-grid">
+        <div class="latest-col">
+          <div class="section-head-row">
+            <div>
+              <span class="tagline" style="color:var(--primary-color);" data-i18n="home_pub_tag">Publications</span>
+              <h2 class="section-title" data-i18n="home_pub_title">최근 출간 논문</h2>
+            </div>
+            <a class="see-all-link" href="publications" data-i18n="see_all">전체 보기 →</a>
+          </div>
+          <div class="feed-list" id="latest-pubs"></div>
+        </div>
+        <div class="latest-col">
+          <div class="section-head-row">
+            <div>
+              <span class="tagline" style="color:var(--primary-color);" data-i18n="home_news_tag">News</span>
+              <h2 class="section-title" data-i18n="home_news_title">최근 소식</h2>
+            </div>
+            <a class="see-all-link" href="news" data-i18n="see_all">전체 보기 →</a>
+          </div>
+          <div class="feed-list" id="latest-news"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 구성원 -->
+    <section class="overview-section">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <span class="tagline" style="color:var(--primary-color);" data-i18n="home_member_tag">Members</span>
+            <h2 class="section-title" data-i18n="home_member_title">연구실 구성원</h2>
+            <p class="section-desc" style="margin-bottom:0;" data-i18n="home_member_sub">함께 연구를 이끌어가는 대학원생 및 학부연구생을 소개합니다.</p>
+          </div>
+          <a class="see-all-link" href="members" data-i18n="see_all">전체 보기 →</a>
+        </div>
+        <div class="member-preview-grid" style="margin-top:28px;">
+          <div class="member-preview-card">
+            <div class="member-photo-wrapper"><img class="member-photo" src="images/professor.jpg" onerror="this.onerror=null; this.src='images/placeholder-avatar.svg'" alt="노윤하 교수"></div>
+            <div class="member-info">
+              <h4 data-i18n="mem_prof_name">노윤하 교수</h4>
+              <p class="role" data-i18n="mem_prof_role">Professor</p>
+            </div>
+          </div>
+          <div class="member-preview-card">
+            <div class="member-photo-wrapper"><img class="member-photo" src="images/student_mjw.jpg" onerror="this.onerror=null; this.src='images/placeholder-avatar.svg'" alt="민지우"></div>
+            <div class="member-info">
+              <h4 data-i18n="mem_s1_name">민지우</h4>
+              <p class="role" data-i18n="mem_s1_role">Master's Course</p>
+            </div>
+          </div>
+          <div class="member-preview-card">
+            <div class="member-photo-wrapper"><img class="member-photo" src="images/student_kmj.jpg" onerror="this.onerror=null; this.src='images/placeholder-avatar.svg'" alt="김민정"></div>
+            <div class="member-info">
+              <h4 data-i18n="mem_s2_name">김민정</h4>
+              <p class="role" data-i18n="mem_s2_role">Bachelor's Course</p>
+            </div>
+          </div>
+          <div class="member-preview-card">
+            <div class="member-photo-wrapper"><img class="member-photo" src="images/student_les.jpg" onerror="this.onerror=null; this.src='images/placeholder-avatar.svg'" alt="류은수"></div>
+            <div class="member-info">
+              <h4 data-i18n="mem_s3_name">류은수</h4>
+              <p class="role" data-i18n="mem_s3_role">Bachelor's Course</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 연구 분야 (최하단) - 카드를 누르면 Research 페이지로 이동 -->
+    <section class="overview-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="res_title">연구 분야 (Research)</h2>
+        <p class="section-desc" data-i18n="res_sub">빅데이터와 다학제적 접근법을 통한 보건의료 문제 해결</p>
+        <div class="research-list research-list-3">
+          <a class="research-item" href="research">
+            <!-- 이미지: images/home-research-1.jpg 파일명을 실제 파일명으로 바꿔주세요 -->
+            <div class="research-img"><img src="images/research-1.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="research-body">
+              <h3 data-i18n="res_c1_t">약물역학 및 RWD 빅데이터 분석</h3>
+              <p data-i18n="res_c1_d">전국민 보건의료 빅데이터를 분석하여 약물의 실마리정보 탐지, 안전성 및 효능 평가 연구를 수행합니다.</p>
+            </div>
+          </a>
+          <a class="research-item" href="research">
+            <!-- 이미지: images/home-research-2.jpg 파일명을 실제 파일명으로 바꿔주세요 -->
+            <div class="research-img"><img src="images/research-2.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="research-body">
+              <h3 data-i18n="res_c2_t">약물감시 및 안전성 신호 탐지</h3>
+              <p data-i18n="res_c2_d">GLP-1 수용체 작용제와 PPI 등 주요 의약품의 잠재적 이상반응을 탐지하고, 실사용 데이터와 부작용 보고 자료를 활용해 약물 안전성을 평가합니다.</p>
+            </div>
+          </a>
+          <a class="research-item" href="research">
+            <!-- 이미지: images/home-research-3.jpg 파일명을 실제 파일명으로 바꿔주세요 -->
+            <div class="research-img"><img src="images/research-3.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="research-body">
+              <h3 data-i18n="res_c3_t">주산기 및 소아 약물 안전성</h3>
+              <p data-i18n="res_c3_d">임산부와 소아·청소년을 대상으로 의약품 노출이 임신 결과와 출생아 건강에 미치는 영향을 평가하고, 정교한 역학 연구 설계를 통해 안전성 근거를 구축합니다.</p>
+            </div>
+          </a>
+          <a class="research-item" href="research">
+            <!-- 이미지: images/home-research-4.jpg 파일명을 실제 파일명으로 바꿔주세요 -->
+            <div class="research-img"><img src="images/research-4.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="research-body">
+              <h3 data-i18n="res_c4_t">규제과학 및 보건의료 정책</h3>
+              <p data-i18n="res_c4_d">의약품 적정사용(DUE), 급여 기준 및 보건의료 정책을 과학적 근거로 평가하여 합리적인 규제 의사결정과 의약품 접근성 향상에 기여합니다.</p>
+            </div>  
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="images/logo.png" alt="Noh Lab logo">
+        <div>
+          <strong data-i18n="footer_lab">Social Pharmacy &amp; Pharmacoepidemiology Lab</strong>
+          <span data-i18n="footer_affil">College of Pharmacy, Chonnam National University</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="footer_contact">Contact</h2>
+        <ul>
+          <li><span class="f-label" data-i18n="footer_email">Email</span><a href="mailto:noh.yh@jnu.ac.kr">noh.yh@jnu.ac.kr</a></li>
+          <li><span class="f-label" data-i18n="footer_tel">Tel</span><a href="tel:+82625302942">+82-62-530-2942</a></li>
+          <li><span class="f-label" data-i18n="footer_addr_label">Address</span><span data-i18n="footer_addr">Building 2, 77 Yongbong-ro, Buk-gu<br>Chonnam National University, Gwangju, South Korea</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="footer_links">Links</h2>
+        <ul>
+          <li><a href="https://orcid.org/0000-0002-3645-7358" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+          <li><a href="https://scholar.google.com/citations?user=eHgq3aEAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><a href="https://www.jnu.ac.kr" target="_blank" rel="noopener noreferrer" data-i18n="footer_univ">Chonnam National University</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Noh Lab, Chonnam National University. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/publications-data.js"></script>
+  <script src="js/home-feed.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n-extra.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

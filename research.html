@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="res_site_title">Research - Noh Lab</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index">
+        <!-- 로고 교체: images/logo.png 파일만 바꿔 넣으면 모든 페이지에 반영됩니다 -->
+        <img class="brand-logo" src="images/logo.png" alt="Noh Lab logo">
+        <span class="brand-text">
+          <span class="brand-name" data-i18n="brand_name">노윤하 교수 Lab</span>
+          <span class="brand-affil" data-i18n="brand_affil">전남대학교 약학대학</span>
+        </span>
+      </a>
+      <div class="header-right">
+        <nav class="site-nav">
+        <a href="index" data-i18n="nav_home">Home</a>
+        <a href="research" class="active" data-i18n="nav_research">Research</a>
+        <a href="publications" data-i18n="nav_publications">Publications</a>
+        <a href="members" data-i18n="nav_members">Members</a>
+        <a href="news" data-i18n="nav_news">News</a>
+        </nav>
+        <button id="lang-toggle-btn" class="lang-btn">EN</button>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="page-title" data-i18n="res_diagram_title">Research Overview</h1>
+    <p class="section-desc" data-i18n="res_sub">빅데이터와 다학제적 접근법을 통한 보건의료 문제 해결</p>
+    <div class="research-list">
+      <article class="research-item">
+        <!-- 이미지: images/research-1.jpg 파일명을 실제 파일명으로 바꿔주세요 -->
+        <div class="research-img"><img src="images/research-1.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="research-body">
+          <h3 data-i18n="topic1_full"></h3>
+          <p data-i18n="topic1_d"></p>
+          <div class="research-tags"><span data-i18n="topic1_kw1"></span><span data-i18n="topic1_kw2"></span><span data-i18n="topic1_kw3"></span><span data-i18n="topic1_kw4"></span></div>
+        </div>
+      </article>
+      <article class="research-item">
+        <!-- 이미지: images/research-2.jpg 파일명을 실제 파일명으로 바꿔주세요 -->
+        <div class="research-img"><img src="images/research-2.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="research-body">
+          <h3 data-i18n="topic2_full"></h3>
+          <p data-i18n="topic2_d"></p>
+          <div class="research-tags"><span data-i18n="topic2_kw1"></span><span data-i18n="topic2_kw2"></span><span data-i18n="topic2_kw3"></span><span data-i18n="topic2_kw4"></span></div>
+        </div>
+      </article>
+      <article class="research-item">
+        <!-- 이미지: images/research-3.jpg 파일명을 실제 파일명으로 바꿔주세요 -->
+        <div class="research-img"><img src="images/research-3.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="research-body">
+          <h3 data-i18n="topic3_full"></h3>
+          <p data-i18n="topic3_d"></p>
+          <div class="research-tags"><span data-i18n="topic3_kw1"></span><span data-i18n="topic3_kw2"></span><span data-i18n="topic3_kw3"></span><span data-i18n="topic3_kw4"></span></div>
+        </div>
+      </article>
+      <article class="research-item">
+        <!-- 이미지: images/research-4.jpg 파일명을 실제 파일명으로 바꿔주세요 -->
+        <div class="research-img"><img src="images/research-4.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="research-body">
+          <h3 data-i18n="topic4_full"></h3>
+          <p data-i18n="topic4_d"></p>
+          <div class="research-tags"><span data-i18n="topic4_kw1"></span><span data-i18n="topic4_kw2"></span><span data-i18n="topic4_kw3"></span><span data-i18n="topic4_kw4"></span></div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="images/logo.png" alt="Noh Lab logo">
+        <div>
+          <strong data-i18n="footer_lab">Social Pharmacy &amp; Pharmacoepidemiology Lab</strong>
+          <span data-i18n="footer_affil">College of Pharmacy, Chonnam National University</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="footer_contact">Contact</h2>
+        <ul>
+          <li><span class="f-label" data-i18n="footer_email">Email</span><a href="mailto:noh.yh@jnu.ac.kr">noh.yh@jnu.ac.kr</a></li>
+          <li><span class="f-label" data-i18n="footer_tel">Tel</span><a href="tel:+82625302942">+82-62-530-2942</a></li>
+          <li><span class="f-label" data-i18n="footer_addr_label">Address</span><span data-i18n="footer_addr">Building 2, 77 Yongbong-ro, Buk-gu<br>Chonnam National University, Gwangju, South Korea</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="footer_links">Links</h2>
+        <ul>
+          <li><a href="https://orcid.org/0000-0002-3645-7358" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+          <li><a href="https://scholar.google.com/citations?user=eHgq3aEAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><a href="https://www.jnu.ac.kr" target="_blank" rel="noopener noreferrer" data-i18n="footer_univ">Chonnam National University</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Noh Lab, Chonnam National University. All rights reserved.</div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n-extra.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
