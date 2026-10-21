@@ -14,7 +14,7 @@ function initMoleculeCanvas() {
   hero.insertBefore(canvas, hero.firstChild);
   const ctx = canvas.getContext("2d");
 
-  let w = 0, h = 0, dpr = 1;
+  let w = 0, h = 0, dpr = 1, cx = 0;
   let targetRotX = 0, targetRotY = 0;
   let rotX = 0, rotY = 0;
 
@@ -47,6 +47,7 @@ function initMoleculeCanvas() {
     const rect = hero.getBoundingClientRect();
     dpr = window.devicePixelRatio || 1;
     w = rect.width; h = rect.height;
+    cx = w > 760 ? w * 0.74 : w * 0.5; // 데스크톱: 애니메이션 중심을 오른쪽으로
     canvas.width = w * dpr; canvas.height = h * dpr;
     canvas.style.width = w + "px"; canvas.style.height = h + "px";
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -66,7 +67,7 @@ function initMoleculeCanvas() {
       let y1 = a.y * cosX - z1 * sinX;
       let z2 = z1 * cosX + a.y * sinX;
       const p = 700 / (700 + z2);
-      return { x: x1 * p + w / 2, y: y1 * p + h / 2, scale: p, color: a.color, radius: a.radius };
+      return { x: x1 * p + cx, y: y1 * p + h / 2, scale: p, color: a.color, radius: a.radius };
     });
 
     bonds.forEach(([i, j]) => {

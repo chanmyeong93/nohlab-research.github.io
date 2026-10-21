@@ -4,6 +4,7 @@
    ========================================================================== */
 Object.assign(translations.ko, {
   hero_btn2: "출간 논문",
+  refs_title: "대표 연구",
   pi_email_label: "이메일",
   pi_profile_label: "연구자 프로필",
   mem_researchers: "Researchers",
@@ -22,6 +23,7 @@ Object.assign(translations.ko, {
 
 Object.assign(translations.en, {
   hero_btn2: "View Publications",
+  refs_title: "Representative Studies",
   pi_email_label: "Email",
   pi_profile_label: "Researcher Profiles",
   mem_researchers: "Researchers",

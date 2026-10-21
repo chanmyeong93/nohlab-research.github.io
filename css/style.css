@@ -356,3 +356,34 @@ a.research-card:hover::after { opacity: 1; transform: translateX(0); }
   .feed-item { padding: 14px; gap: 12px; }
   .feed-item .pub-year { min-width: 46px; font-size: 0.8rem; }
 }
+
+/* ==========================================================================
+   Hero: 글자 좌측 정렬 + 애니메이션 우측 (글자 쪽으로 갈수록 흐려짐)
+   ========================================================================== */
+.hero { text-align: left; padding: 120px 0 100px; }
+.hero::before { left: 72%; }
+.hero canvas { -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 42%, #000 78%); mask-image: linear-gradient(to right, transparent 0%, transparent 42%, #000 78%); }
+.hero .tagline { color: var(--primary-light); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.2em; margin-bottom: 4px; }
+.hero h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; margin: 14px 0 20px; }
+.hero .subtitle { font-size: 20px; line-height: 1.7; color: #e2e8f0; max-width: 580px; margin: 0 0 32px; }
+.hero-cta { justify-content: flex-start; }
+@media (max-width: 760px) {
+  .hero canvas { opacity: 0.35; -webkit-mask-image: none; mask-image: none; }
+  .hero::before { left: 50%; }
+}
+@media (max-width: 640px) {
+  .hero { padding: 80px 0 70px; }
+  .hero h1 { font-size: 2rem; }
+  .hero .subtitle { font-size: 17px; }
+  .hero .tagline { font-size: 0.72rem; letter-spacing: 0.14em; }
+}
+
+/* Research: 대표 연구 링크 */
+.research-refs { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-color); }
+.research-refs h4 { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+.research-refs ul { list-style: none; }
+.research-refs li { position: relative; padding-left: 14px; margin-bottom: 6px; font-size: 0.92rem; line-height: 1.55; }
+.research-refs li::before { content: "•"; position: absolute; left: 0; color: var(--primary-color); font-weight: 700; }
+.research-refs a { color: var(--primary-color); font-weight: 600; }
+.research-refs a:hover { text-decoration: underline; }
+.hero h1 { max-width: 700px; }
